@@ -1,3 +1,4 @@
+const { rejects } = require("assert");
 const { log } = require("console");
 const fs = require("fs");
 
@@ -84,6 +85,28 @@ async deleteAllProducts(){
     console.log("Todos los productos han sido eliminados");
     await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, "\t"));
 }
+
+
+/*correxion del desafio anterior y consulta tambien
+
+async traerProductoPorId(id) {
+    return new Promise((resolve, reject) => {
+        const prod = this.products.find(prod => prod.id === id);
+        if (!prod) {
+            reject(new Error("No existe un producto con este ID"));
+            const NuevoProducto ={
+                id: id,
+                nombre: "nuevo producto",
+                descripcion: 
+            }
+        } else {
+            resolve(prod);
+        }
+    });
+}
+
+
+*/
 
 }
 
