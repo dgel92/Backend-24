@@ -26,7 +26,7 @@ export class ProductManager {
 
     async getProductById(id) {
         await this.readProductsFromFile();
-        const productId = parseInt(id); // Convertir el ID a número
+        const productId = parseInt(id);
         const product = this.products.find((product) => product.id === productId);
         if (!product) {
             throw new Error("Producto no encontrado.");

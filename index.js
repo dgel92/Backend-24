@@ -1,4 +1,4 @@
-class ProductManager {
+/*class ProductManager {
     constructor(){
         this.products = [];
         this.counter = 0;
@@ -88,3 +88,4 @@ console.log("Productos después de borrar:", productosRestantes);
 // Borrar todos los productos
 manager.borrarTodosLosProductos();
 console.log("Productos después de borrar todo:", manager.traerTodosLosProductos());
+*/
